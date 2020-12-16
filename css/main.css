@@ -17,16 +17,20 @@ body
 .card
 {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
     background: #ffffff;
     box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
     text-align: left;
     overflow: hidden;
     padding: 20px;
-    transition: all 0.3s;
+    transition: all 0.5s;
     color: #000000;
-    margin: 10px;
+    z-index: 1;
+}
+.card:nth-child(2)
+{
+    margin: 0 10px;
 }
 .card h1
 {
@@ -38,14 +42,19 @@ body
 }
 .card:hover
 {
-    background: rgb(255, 83, 83);
+    background: #2F4CA3;
     box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
+    color: #fff;
+    transform: scale(1.04);
 }
 @media (max-width: 768px)
 {
     .card
     {
         width: 100%;
+    }
+    .card:nth-child(2)
+    {
         margin: 10px 0;
     }
     body
