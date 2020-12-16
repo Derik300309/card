@@ -40,6 +40,15 @@ body
 {
     padding: 10px 0;
 }
+.card i
+{
+    float: right;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    transition: all 0.1s;
+}
 .card:hover
 {
     background: #2F4CA3;
@@ -47,6 +56,10 @@ body
     color: #fff;
     transform: scale(1.04);
 }
+.card:hover i
+    {
+        color: #fff;
+    }
 @media (max-width: 991px)
 {
     .card
