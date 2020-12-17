@@ -53,7 +53,7 @@ body
 }
 .card:hover
 {
-    background: #2F4CA3;
+    background: #558cf3;
     box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
     color: #fff;
     transform: scale(1.04);
