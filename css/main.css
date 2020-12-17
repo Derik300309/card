@@ -59,22 +59,28 @@ body
     transform: scale(1.04);
 }
 .card:hover i
-    {
-        color: #fff;
-    }
+{
+    color: #fff;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+}
 @media (max-width: 991px)
 {
     .card
     {
         width: 100%;
+        padding: 10px;
     }
     .card:nth-child(2)
     {
         margin: 10px 0;
     }
-    .card:hover
+    .card i
     {
-        transform: scale(1.02);
+        bottom: 20px;
+        right: 20px;
     }
     body
     {
