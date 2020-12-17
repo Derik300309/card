@@ -61,6 +61,7 @@ body
 .card:hover i
 {
     color: #fff;
+    cursor: pointer;
 }
 ::-webkit-scrollbar
 {
@@ -76,6 +77,10 @@ body
     .card:nth-child(2)
     {
         margin: 10px 0;
+    }
+    .card:hover
+    {
+        transform: scale(1.02);
     }
     .card i
     {
