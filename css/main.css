@@ -50,6 +50,7 @@ body
     transition: all 0.1s;
     bottom: 30px;
     right: 30px;
+    cursor: pointer;
 }
 .card:hover
 {
