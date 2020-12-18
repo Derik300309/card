@@ -3,14 +3,21 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 body
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 100vh;
     padding: 10px;
 }
@@ -20,11 +27,16 @@ body
     width: 380px;
     height: 380px;
     background: #ffffff;
-    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
     text-align: left;
     overflow: hidden;
     padding: 20px;
+    -webkit-transition: color 0.1s, background 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: color 0.1s, background 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    -o-transition: color 0.1s, background 0.3s, box-shadow 0.3s, transform 0.3s;
     transition: color 0.1s, background 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition: color 0.1s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
     color: #000000;
     z-index: 1;
 }
@@ -47,6 +59,8 @@ body
     text-decoration: none;
     color: #000;
     position: absolute;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
     transition: all 0.1s;
     bottom: 30px;
     right: 30px;
@@ -55,9 +69,12 @@ body
 .card:hover
 {
     background: #558cf3;
-    box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
     color: #fff;
-    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
 }
 .card:hover i
 {
@@ -81,7 +98,9 @@ body
     }
     .card:hover
     {
-        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+                transform: scale(1.02);
     }
     .card i
     {
